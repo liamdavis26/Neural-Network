@@ -11,21 +11,25 @@ int main()
 	{
 
 		fResult = nNeuron.GetInput(0.0f, 0.0f);
+		std::cout << fResult << ", ";
 		if(fResult == 0.0f)
 		{
 			iCorrect++;
 		}
 		fResult = nNeuron.GetInput(0.0f, 1.0f);
+		std::cout << fResult << ", ";
 		if(fResult == 0.0f)
 		{
 			iCorrect++;
 		}
 		fResult = nNeuron.GetInput(1.0f, 0.0f);
+		std::cout << fResult << ", ";
 		if(fResult == 0.0f)
 		{
 			iCorrect++;
 		}
 		fResult = nNeuron.GetInput(1.0f, 1.0f);
+		std::cout << fResult << ", " << std::endl;
 		if(fResult == 1.0f)
 		{
 			iCorrect++;
